@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagenes/IMG-20250310-WA0004.jpg"></a>
+        <h1>mi empresa</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="imagenes/IMG-20250310-WA0002.jpg" alt="quienes_somos">
+            </div>
+            <div class="derecha">
+                <h2>Mi empresa</h2>
+                <p>Nuestra misión es brindarte un servicio y producctos personalizado más actuales...</p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>PROOMCIONES</h2>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <img src="imagenes/IMG-20250310-WA0003.jpg" alt="Producto 1">
+                    <div class="producto-info">
+                        <h2>Promoción Especial 1</h2>
+                        <p>Descripción breve del producto 1.</p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="producto">
+                    <img src="imagenes/IMG-20250310-WA0001.jpg" alt="Producto 2">
+                    <div class="producto-info">
+                        <h2>Promoción Especial 2</h2>
+                        <p>Descripción breve del producto 2.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Servicios y Precios</h2>
+                <ul>
+                    <li>servicio uno: $15</li>
+                    <li>servicio dos: $25</li>
+                    <li>servicio tre: $35</li>
+                    <li>servicio cuatro: desde $20</li>
+                    <!-- Agregar más servicios según sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+                <img src="imagenes/IMG-20250310-WA0005.jpg" alt="Servicio">
+            </div>
+        </section>
+
+        <!-- Sección de Marcas -->
+        <section id="marcas">
+            <h2>Nuestras Marcas</h2>
+            <div class="brands">
+                <img src="imagenes/IMG-20250310-WA0006.jpg" alt="Marca 1">
+                <img src="imagenes/IMG-20250310-WA0006.jpg" alt="Marca 2">
+                <img src="imagenes/IMG-20250310-WA0007.jpg" alt="Marca 3">
+                <img src="imagenes/IMG-20250310-WA0008.jpg" alt="Marca 4">
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2024 Mi empresa. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: info@tuempresa.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>
